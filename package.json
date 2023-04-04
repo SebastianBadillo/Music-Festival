@@ -1,5 +1,35 @@
 {
-  "dependencies": {
+  "name": "musicfestival",
+  "version": "1.0.0",
+  "description": "Project with Gulp, SASS and HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "task": "gulp taskk",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebasbadillo14/Music-Festival.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Daniel Sebastian Badillo Neira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebasbadillo14/Music-Festival/issues"
+  },
+  "homepage": "https://github.com/sebasbadillo14/Music-Festival#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
     "sass": "^1.60.0"
   }
 }

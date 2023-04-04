@@ -1,0 +1,11 @@
+/* Old way
+@import 'base/variables'; //the variables are import in a global way
+@import 'content/content';
+*/
+
+@use 'base';
+@use 'layout';
+
+
+
+

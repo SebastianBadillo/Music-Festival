@@ -8,8 +8,174 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="build/css/app.css">
     </head>
-    <body>
 
+
+
+    <body>
+        <header class="header">
+            <div class="container header-content">
+                
+                <h1> Rock & EDM Festival</h1>
+                <nav class="principal-navegation"> 
+                    <a href="#">Line Up</a>
+                    <a href="#">Gallery</a>
+                    <a href="#" >Tickets</a>
+                </nav>
+               
+            </div>
+        </header>
+        <div class="video">
+            <div class="overlay">
+                <div class="container video-content">
+                    <h2>Rock & EDM festival</h2>
+                    <p>Abril 2023, Bucaramanga, Colombia</p>
+                </div>
+            </div>
+            <video autoplay muted loop > <!--controls will make appear the controls of the video-->
+                <source src="video/concierto.mp4" type="video/mp4"><!--mp4 is always the first option-->
+                <source src="video/concierto.ogg" type="video/ogg">
+                <source src="video/concierto.webm" type="video/webm">
+            </video>
+        </div>
+
+        <section class="festival">
+            <div class="image">
+                <picture>
+                    <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                    <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                    <img loading= "lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="Singer Image">
+                </picture>
+                
+            </div>
+            <div class="festival-content">
+                <h3> Rock & EDM festival</h3>
+                <p class ="date">April 2023 Bucaramanga, Colombia</p>
+                <p>
+                    tae itaque cum doloremque, 
+                    reiciendis dolor mollitia iusto officiis accusamus,
+                    sit sunt nihil impedit error quod labore laborum eos illo?
+                </p>
+            </div>
+
+        </section>
+
+        <section class="line-up">
+            <h3>Line Up</h3>
+
+            <p class="day">Friday 14 </p>
+            <div class="scenes-container container">
+                <div class="scene rock bg-yellow">
+                    <p class="scene-name"> Rock Scene</p>
+                    
+                    <ul class="calendar">
+                        <li>
+                            24:00 | <span>Metallica</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Pearl Jam</span>
+                        </li>
+                        <li>
+                            20:00 | <span>KoRn</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Muse</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Breaking Benjamin</span>
+                        </li>
+                        <li>
+                            17:00 | <span>30 Seconds to Mars</span>
+                        </li>
+                        
+                    </ul>
+                </div><!--scene-->
+
+                <div class="scene edm bg-green">
+                    <p class="scene-name"> EDM Scene</p>
+                    <ul class="calendar">
+                        <li>
+                            24:00 | <span>Deadmau5</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Tïesto</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Hardwell</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Dash Berlin</span>
+                        </li>
+                        
+                        <li>
+                            18:00 | <span>Fedde Legrand</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Audien</span>
+                        </li>
+                        
+
+                    </ul>
+                </div><!--scene-->
+               
+            </div><!--scene-container-->
+
+            <p class="day">Saturday 15 </p>
+            <div class="scenes-container container">
+                <div class="scene rock bg-green">
+                    <p class="scene-name">Rock Scene</p>
+                    <ul class="calendar">
+                        <li>
+                            24:00 | <span>Red Hot Chili Peppers</span>
+                        </li>
+                        <li>
+                            22:00 | <span>The Killers</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Deftones</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Limp Bizkit</span>
+                        </li>
+                        
+                        <li>
+                            18:00 | <span>Papa Roach</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Lamb of God</span>
+                        </li>
+                        
+                        
+                    </ul>
+                </div><!--scene-->
+
+                <div class="scene edm bg-yellow">
+                    <p class="scene-name">EDM Scene</p>
+                    <ul class="calendar">
+                        <li>
+                            24:00 | <span>Paul Van Dyk</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Armin Van Buuren</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Above & Beyond</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Eric Prdyz</span>
+                        </li>
+                        
+                        <li>
+                            18:00 | <span>Ferry Corsten</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Vini Vici</span>
+                        </li>
+                    </ul>
+                </div><!--scene-->
+               
+            </div><!--scene-container-->
+        </section>
     </body>
 </html>

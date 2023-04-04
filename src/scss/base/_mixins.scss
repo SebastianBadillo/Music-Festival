@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+@mixin phone{
+    @media(min-width:v.$cellphone){
+        @content; //this is very important, this will allow you to inyect code when you call the mixin
+    }
+}
+
+@mixin tablet{
+    @media(min-width:v.$tablet){
+        @content; //this is very important, this will allow you to inyect code when you call the mixin
+    }
+}
+
+@mixin desktop{
+    @media(min-width:v.$desktop){
+        @content; //this is very important, this will allow you to inyect code when you call the mixin
+    }
+}
+
+@mixin desktopXl{
+    @media(min-width:v.$desktopXl){
+        @content; //this is very important, this will allow you to inyect code when you call the mixin
+    }
+}
+
+@mixin grid($columns, $gap){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    column-gap: $gap;
+}

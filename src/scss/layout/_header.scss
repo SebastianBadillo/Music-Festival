@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background-color: v.$green;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: v.$white;
+    padding: 2rem 1rem;
+    @include m.tablet{
+        flex-direction: row;
+        padding: unset;
+        
+    }
+    h1{
+        text-align: center;
+        margin-top: 0;
+        @include m.tablet{
+            margin: 2rem ;
+        }
+    }
+}
+
+.principal-navegation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:1rem;
+
+    @include m.tablet{
+        flex-direction:row ;
+        gap:2rem
+    }
+
+    a{
+        color: v.$white;
+        margin: auto ;
+        font-size: 2.4rem;
+        text-align: center;
+
+        &:hover{//the & is really important when the scss is compiled, it will be a:hover, without the '&' the result will be a :hover
+            color:v.$yellow;
+        }
+    }
+}
+

@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.line-up{
+    background-color: v.$pink;
+    padding-top: 3rem;
+
+    h3{
+        text-align: center;
+        color: v.$white;
+        
+    }
+    .day{
+        text-align: center;
+        color: v.$white;
+        margin-bottom: 4rem;
+        margin-top: 4rem
+    }
+}
+
+.scenes-container{
+    
+    @include m.tablet{
+        @include m.grid(2, 5rem);
+    }
+
+
+}
+.scene{
+    padding-top: 2rem;
+    .scene-name{
+        text-align: center;
+        
+    }
+
+}
+
+.bg-green{
+    background-color: v.$green;
+}
+.bg-yellow{
+    background-color: v.$yellow;
+}
+
+.calendar{
+    li{
+        line-height: 6rem;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
+    
+}

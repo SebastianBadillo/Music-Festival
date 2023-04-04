@@ -1,0 +1,63 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.video{
+    position: relative;
+    max-height: 70rem;
+    height: 40rem;
+    @include m.tablet{
+        min-height: unset;
+        height: unset;
+    }
+    //min-height: 50rem;
+    overflow: hidden;
+    video{// the label <video>
+        //width: 100%;
+        @include m.tablet{
+            width: 100%;
+        }
+        display: block;
+        //background-position: center center;
+
+    }
+}
+
+.overlay{
+    z-index: 9; // this will put the text over the video
+    position: absolute;
+    background: rgb(189,6,103);//cssgradient.io
+    background: linear-gradient(90deg, rgba(189,6,103,0.44981320164784666) 0%, rgba(185,10,217,0.0856675433845413) 100%); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    align-items: center;
+    color:v.$white;
+
+    h2{
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        @include m.phone{
+            font-size: 5rem;
+        }
+        @include m.tablet{
+            font-size: 7rem;
+        }
+    }
+
+    p{
+        background-color: v.$pink;
+        display: inline-block;
+        color: v.$white;
+        padding: 1rem;
+        margin: 0;
+        font-weight: 400;
+        font-size: 1rem;
+        @include m.phone{
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        
+    }
+}
