@@ -4,6 +4,7 @@
 .line-up{
     background-color: v.$pink;
     padding-top: 3rem;
+    padding-bottom: 3rem;
 
     h3{
         text-align: center;
@@ -12,9 +13,10 @@
     }
     .day{
         text-align: center;
+        text-transform: uppercase;
         color: v.$white;
-        margin-bottom: 4rem;
-        margin-top: 4rem
+        margin-bottom: 5rem;
+        margin-top: 5rem
     }
 }
 
@@ -29,26 +31,59 @@
 .scene{
     padding-top: 2rem;
     .scene-name{
-        text-align: center;
-        
-    }
+        text-align: center; 
 
+        &:after{
+            content:'';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+    
+    
 }
 
 .bg-green{
     background-color: v.$green;
+
+    li:nth-child(odd){
+        background-color: darken(v.$green, 10%);
+    }
 }
 .bg-yellow{
     background-color: v.$yellow;
+    li:nth-child(odd){
+        background-color: darken(v.$yellow, 10%);
+    }
 }
 
 .calendar{
+    @include m.resetList;
     li{
-        line-height: 6rem;
+        
         font-weight: 700;
+        padding: 2.5rem;
         span{
             font-weight: 400;
         }
     }
     
+}
+
+
+
+.edm .scene-name:after{
+    
+    background-image: url(../img/icono_edm.webp);// you start where the archive is compiled
+
+}
+
+.rock .scene-name:after{
+   
+    background-image: url(../img/icono_rock.webp);// you start where the archive is compiled
 }

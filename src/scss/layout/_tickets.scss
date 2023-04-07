@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tickets{
+    background-color: v.$green;
+    padding: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+    h3{
+
+        text-align: center;
+        color: v.$white;
+    }
+}
+
+.plans-container{
+    margin: 0 auto;
+    
+    ul{
+        @include m.resetList;
+    }
+    @include m.phone{
+        width: 90%
+    }
+    
+    @include m.tablet{
+        @include m.grid(2, 3rem);
+        width: 70%;
+    }
+    
+}
+.plan{
+    h4{
+        text-align: center;
+        color: v.$white;
+    }
+
+    ul{
+        background-color: v.$white;
+    }
+    li{
+        padding: 1.5rem;
+        border-bottom: 1px solid #e1e1e1
+    }
+    li:nth-child(1){
+        background-color: v.$pink;
+        color: v.$white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    li:last-child{
+        background-color: v.$purple;
+        color: v.$white;
+        text-align: center;
+        border-bottom: unset;
+        
+    }
+}
